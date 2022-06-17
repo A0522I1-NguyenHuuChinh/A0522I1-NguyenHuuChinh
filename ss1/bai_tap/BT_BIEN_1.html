@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập điểm của 1 sinh viên</title>
+</head>
+<body>
+<script>
+    let inputPhysisc;
+    let inputChemistry;
+    let inputBiological;
+    inputPhysisc=prompt('Enter physisc');
+    inputChemistry=prompt('Enter chemistry');
+    inputBiological=prompt('Enter biological');
+    let physisc=parseInt(inputPhysisc);
+    let chemistry=parseInt(inputChemistry);
+    let biological=parseInt(inputBiological);
+    let average=(physisc+chemistry+biological)/2
+    document.writeln('Average = ' +average);
+    let sum=physisc+chemistry+biological
+    document.writeln('Sum = ' + sum);
+
+</script>
+</body>
+</html>
