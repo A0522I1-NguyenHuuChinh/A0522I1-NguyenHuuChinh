@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<h3>Caculator</h3>
+<form>
+    <input type="text" id="giatri1"></input>
+    <input type="text" id="giatri2"></input>
+    <br>
+    <br>
+    <button onclick="cong()">Addition(+)</button>
+    <button onclick="tru()">Subtraction(-)</button>
+    <button onclick="nhan()">Multiplication(x)</button>
+    <button onclick="chia()">Division(/)</button>
+</form>
+<script>
+    function cong() {
+        let so1=parseInt(document.getElementById("giatri1").value);
+        let so2=parseInt(document.getElementById("giatri2").value);
+        alert(so1+so2);
+    }
+    function tru() {
+        let so1=parseInt(document.getElementById("giatri1").value);
+        let so2=parseInt(document.getElementById("giatri2").value);
+        alert(so1-so2);
+    }
+    function nhan() {
+        let so1=parseInt(document.getElementById("giatri1").value);
+        let so2=parseInt(document.getElementById("giatri2").value);
+        alert(so1*so2);
+    }
+    function chia() {
+        let so1=parseInt(document.getElementById("giatri1").value);
+        let so2=parseInt(document.getElementById("giatri2").value);
+        alert(so1/so2);
+    }
+</script>
+</body>
+</html>
