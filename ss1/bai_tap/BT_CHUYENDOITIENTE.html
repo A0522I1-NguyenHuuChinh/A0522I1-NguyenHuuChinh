@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<table>
+<form>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+    </tr>
+<tr>
+    <th><input type="text" id="nhapsotien"></input>
+    </th>
+<th><select name="dropdown">
+    <option value="vnd">VND</option>
+</select>
+</th>
+    <th><select name="dropdown">
+        <option value="usd">USD</option>
+    </select>
+    </th>
+    <th>
+        <button onclick="doitien()">Convert</button>
+    </th>
+</tr>
+</form>
+</table>
+<script>
+    function doitien() {
+        let giatri=document.getElementById("nhapsotien").value
+        alert(giatri/23000);
+    }
+</script>
+</body>
+</html>
