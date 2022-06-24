@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 5</title>
+</head>
+<body>
+<script>
+    let so1=parseInt(prompt("Nhập điểm bài kiểm tra"));
+    let so2=parseInt(prompt("Nhập điểm thi giữa kì"));
+    let so3=parseInt(prompt("Nhập điểm thi cuối kì"));
+    let dtb=((so1+so2+so3)/3);
+    if (dtb >= 9){
+        document.write("Bạn là học sinh xuất sắc : " +dtb );
+    }else if ( dtb >=8){
+        document.write("Bạn là học giỏi : " +dtb );
+    }else if (dtb >=7){
+        document.write("Bạn là học sinh khá : " +dtb );
+    }else if (dtb >=6){
+        document.write("Bạn là học sinh trung bình: " +dtb );
+    }else {
+        document.write("Bạn là học sinh yếu: " +dtb );
+    }
+</script>
+</body>
+</html>
