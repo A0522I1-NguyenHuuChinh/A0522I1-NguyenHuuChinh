@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy Tính Cơ Bản</title>
+</head>
+
+<body>
+<style>
+    table tr,td {
+        border: 1px solid black;
+        background-color:yellow;
+    }
+    .phimso {
+        width: 100%;
+    }
+</style>
+<fieldset style="width: 25%; background-color: aqua">
+<table align="center">
+    <tr>
+        <input style="width: 130px" type="text" id="hienThi">
+    </tr>
+    <tr>
+        <td><button class="phimso" id="1" onclick="maytinh('1')">1</button></td>
+        <td><button class="phimso" id="2" onclick="maytinh('2')">2</button></td>
+        <td><button class="phimso" id="3" onclick="maytinh('3')">3</button></td>
+        <td><button class="phimso" id="cong" onclick="maytinh('+')">+</button></td>
+    </tr>
+    <tr>
+        <td><button class="phimso" id="4" onclick="maytinh('4')">4</button></td>
+        <td><button class="phimso" id="5" onclick="maytinh('5')">5</button></td>
+        <td><button class="phimso" id="6" onclick="maytinh('6')">6</button></td>
+        <td><button class="phimso" id="tru" onclick="maytinh('-')">-</button></td
+    </tr>
+    <tr>
+        <td><button class="phimso" id="7" onclick="maytinh('7')">7</button></td>
+        <td><button class="phimso" id="8" onclick="maytinh('8')">8</button></td>
+        <td><button class="phimso" id="9" onclick="maytinh('9')">9</button></td>
+        <td><button class="phimso" id="nhan" onclick="maytinh('*')">*</button></td>
+    </tr>
+    <tr>
+        <td><button class="phimso" id="nhaplai" onclick="maytinh1('C')">C</button></td>
+        <td><button class="phimso" id="khong"   onclick="maytinh('0')">0</button></td>
+        <td><button class="phimso" id="bang"   onclick="maytinh2('=')">=</button></td>
+        <td><button class="phimso" id="chia" onclick="maytinh('/')">/</button></td>
+    </tr>
+</table>
+</fieldset>
+<script>
+    function maytinh(value) {
+        document.getElementById("hienThi").value +=value;
+    }
+    function maytinh1() {
+        document.getElementById("hienThi").value =null;
+    }
+    function maytinh2() {
+        let kq=document.getElementById("hienThi").value;
+        document.getElementById("hienThi").value =eval(kq);
+    }
+</script>
+</body>
+</html>
