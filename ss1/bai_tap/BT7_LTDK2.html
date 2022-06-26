@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 7</title>
+</head>
+<body>
+<h3> Giải phương trình bậc 2 có dạng : ax^2+bx+c=0</h3>
+<p>Nhập giá trị a </p>
+<input type="text" id="giatria">
+<p>Nhập giá trị b </p>
+<input type="text" id="giatrib">
+<p>Nhập giá trị c </p>
+<input type="text" id="giatric">
+<br><br>
+<button onclick="convert()">Giải phương trình</button>
+<p id="giai"></p>
+<script>
+    function convert() {
+        let a = document.getElementById('giatria').value;
+        let b = document.getElementById('giatrib').value;
+        let c = document.getElementById('giatric').value;
+        let d = (b * b) - (4 * a * c);
+        let l = Math.sqrt(d)
+        if (d == 0) {
+            document.getElementById('giai').innerHTML = -b / (2 * a)
+        }else if(d > 0) {
+            document.getElementById('giai').innerHTML = (-b + l) / (2*a) + " và " + (-b - l / (2*a))
+        } else if ( d < 0) {
+            document.getElementById('giai').innerHTML = 'Phương trình vô nghiệm'
+        }
+    }
+</script>
+</body>
+</html>

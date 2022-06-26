@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 9</title>
+</head>
+<body>
+<p>Số thứ nhất</p>
+<input type="number" id="so1">
+<p>Số thứ hai</p>
+<input type="number" id="so2">
+<p>Số thứ ba</p>
+<input type="number" id="so3">
+<br><br>
+<button onclick="convert()">Tính</button>
+<p id="hienthi"></p>
+<script>
+    function convert() {
+        let a = document.getElementById('so1').value;
+        let b = document.getElementById('so2').value;
+        let c = document.getElementById('so3').value;
+        let d = (a,b,c);
+        let e = a+b;
+        let f = b + c;
+        let g = a + c;
+        if (d > 0){
+            if (e > c){
+                if (f > a){
+                    if ( g > b){
+                        document.getElementById('hienthi').innerHTML = "Là 3 cạnh của một tam giác";
+                    }else
+                        document.getElementById('hienthi').innerHTML = "Đây không phải 3 cạnh của tam giác";
+                }else
+                    document.getElementById('hienthi').innerHTML = "Đây không phải 3 cạnh của tam giác";
+            }else
+                document.getElementById('hienthi').innerHTML = "Đây không phải 3 cạnh của tam giác";
+        }else
+            document.getElementById('hienthi').innerHTML = "Đây không phải 3 cạnh của tam giác";
+    }
+    </script>
+</body>
+</html>

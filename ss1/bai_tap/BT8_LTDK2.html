@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 8</title>
+</head>
+<body>
+    <h4>Nhập vào một số</h4>
+    <input type="text" id="sotuoi">
+    <br><br>
+<button onclick="kiemtra()">Đây có phải tuổi của một người không</button>
+<p id="hienthi"></p>
+<script>
+    function kiemtra() {
+        let tuoi = document.getElementById('sotuoi').value;
+        if (tuoi <= 0) {
+            document.getElementById('hienthi').innerHTML = 'Đây không phải tuổi của một người';
+        } else if (tuoi < 120) {
+            document.getElementById('hienthi').innerHTML = 'Đây là tuổi của một người';
+        } else if (tuoi >= 120) {
+            document.getElementById('hienthi').innerHTML = 'Đây không phải tuổi của một người';
+        }
+    }
+</script>
+</body>
+</html>

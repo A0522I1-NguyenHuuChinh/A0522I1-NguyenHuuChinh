@@ -5,8 +5,30 @@
     <title>Bài tập 6</title>
 </head>
 <body>
-<script>
-       
+    <h3> Giải phương trình bậc 1 có dạng : ax+b=0</h3>
+        <p>Nhập giá trị a </p>
+    <input type="text" id="giatria">
+        <p>Nhập giá trị b </p>
+    <input type="text" id="giatrib">
+        <br><br>
+        <button onclick="convert()">Giải phương trình</button>
+    <p id="giai"></p>
+        <script>
+        function convert() {
+            let a = document.getElementById('giatria').value;
+            let b = document.getElementById('giatrib').value;
+            let x = -b/a
+            if (a != 0) {
+                document.getElementById('giai').innerHTML = x
+            }else if ( a == 0)
+                if (b == 0) {
+                    document.getElementById('giai').innerHTML = 'Phương trình vô số nghiệm '
+                } else if (b != 0) {
+                    document.getElementById('giai').innerHTML = 'Phương trình vô nghiệm '
+                }
+
+        }
+
 </script>
 </body>
 </html>
