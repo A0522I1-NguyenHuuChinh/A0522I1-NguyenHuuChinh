@@ -6,7 +6,22 @@
 </head>
 <body>
 <script>
-    
+    let a= parseInt(prompt("Nhập số tiền : "));
+    let b= parseInt(prompt("Nhập số tháng : "));
+    let c ;
+
+    if(b>6){
+        c=a*5/100;
+        document.write("Số lãi của bạn là : "+c);
+    }else if (b>12){
+        c=a*10/100;
+        document.write("Số lãi của bạn là : "+c);
+    }else if (b>24){
+        c=a*20/100;
+        document.write("Số lãi của bạn là : "+c);
+    }else {
+        document.write("Bạn không đủ điều kiện");
+    }
 </script>
 
 </body>
