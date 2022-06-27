@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 10</title>
+</head>
+<body>
+<script>
+    let chuDien = parseInt(prompt('Nhập số chữ điện đã sử dụng'));
+    let tongtien;
+    if(chuDien <= 50){
+        tongtien = chuDien * 1678;
+        document.write("Số tiền phải trả :" +tongtien+ "VNĐ");
+    }
+    else if(chuDien > 50 && chuDien <= 100){
+        tongtien= chuDien * 1734;
+        document.write("Số tiền phải trả :" +tongtien+ "VNĐ");
+    }else
+    {
+        tongtien= chuDien * 2014;
+        document.write("Số tiền phải trả :" +tongtien+ "VNĐ");
+    }
+    </script>
+</body>
+</html>
