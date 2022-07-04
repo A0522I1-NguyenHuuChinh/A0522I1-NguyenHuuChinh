@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trò chơi đoán số</title>
+</head>
+<body>
+<script>
+        let a = parseInt(prompt("Min"));
+        let b = parseInt(prompt("Max"));
+        let d = Math.floor(Math.random() * (b-a+1) + a);
+     for (let i=0;i<3;i++) {
+         let c = parseInt(prompt("Dự đoán"));
+         if (d>c){
+             alert("Nhập số bé hơn");
+         } else if (d<c){
+             alert("Nhập số lớn hơn");
+         }else {
+         alert("Bạn đã đoán đúng");
+         break;
+     }
+    }
+</script>
+</body>
+</html>
