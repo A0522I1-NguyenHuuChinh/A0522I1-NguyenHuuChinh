@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 5</title>
+</head>
+<body>
+<script>
+    let n=20;
+    let n1 = 0;
+    let n2 = 1;
+    let f = 0;
+    let sum=0;
+    for(let i = 1; i <= n ; i++){
+        document.write(n1 + "<br>");
+        f = n1 + n2;
+        n1=n2;
+        n2=f;
+        sum=sum+n1;
+    }
+    document.writeln("Tổng 20 số đầu tiên là : " + sum);
+</script>
+</body>
+</html>
