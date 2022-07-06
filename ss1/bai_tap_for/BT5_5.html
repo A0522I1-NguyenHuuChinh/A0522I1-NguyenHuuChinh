@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 5</title>
+</head>
+<body>
+<script>
+ let tien=parseFloat(prompt("Số tiền cần gởi"));
+ let thang=parseFloat(prompt("SỐ tháng cần gởi"));
+ let lai=parseFloat(prompt("Lãi suất:"));
+ let laicuoi;
+ for(let i=1; i<=thang;i++){
+     laicuoi= tien*lai;
+    laicuoi+=laicuoi;
+ }
+ document.writeln("Số tiền lại hiện có "+laicuoi);
+</script>
+</body>
+</html>
