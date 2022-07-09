@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<label>Tiếng Anh</label>
+<input type="text" id="input">
+<br><br>
+<input type="button" onclick="Search()" value="Tìm kiếm">
+<br><br>
+<p>Tiếng Việt:</p>
+<p id="result"></p></p>
+<script>
+    function Search() {
+        let eng = ["hello", "mother", "father", "girls", "boy"];
+        let vie = ["xin chào", "mẹ", "cha", "con gái", "con trai"];
+        let value = document.getElementById("input").value;
+        let result;
+        if (eng.indexOf(value) !== -1) {
+            result = vie[eng.indexOf(value)];
+        } else {
+            result = "Không có kết quả";
+        }
+        document.getElementById("result").innerText = result;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 8</title>
+</head>
+<body>
+<script>
+    let int = [];
+    for (let i = 0; i < 10; i++) {
+        int[i] = parseInt(prompt("Nhập vào 10 số"));
+    }
+    document.writeln(int.sort(function (a,b) {
+        return b-a;
+    }).join("-"))
+</script>
+</body>
+</html>

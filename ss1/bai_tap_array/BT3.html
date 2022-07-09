@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 3</title>
+</head>
+<body>
+<script>
+ let int=[8,4,9,12,4,25,7,11];
+ let max=int[0];
+ let sum=0;
+ let dem=0;
+ for (let i=0;i<int.length;i++){
+     if (int[i]>max){
+         max=int[i];
+     }
+     sum=sum+int[i];
+     dem++;
+ }
+ let aver=sum/dem;
+ document.write("Giá trị lớn nhất trong mảng là "+max+ "<br>");
+ document.write("Giá trị trung bình trong mảng là " +aver);
+</script>
+
+</body>
+</html>
