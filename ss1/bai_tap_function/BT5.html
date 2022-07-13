@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 5</title>
+</head>
+<body>
+<script>
+    let sta1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let sta2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    function search(star) {
+        for (let i = 0; i <= sta1.length; i++) {
+            if (star === sta1[i]) {
+                return document.write(sta2[i]);
+            }
+        }
+        return document.write("Không tìm thấy");
+    }
+    let star = prompt("Nhập vào tên ngôi sao");
+    search(star);
+</script>
+</body>
+</html>
